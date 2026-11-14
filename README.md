@@ -5,7 +5,7 @@ Organization: Nigerian Railway Corporation
 
 System: Passenger Train E-Ticketing and Seat Reservation Platform
 ```
-### Case study and system scope
+## 1. Case study and system scope
 
 This individual portfolio models a passenger e-ticketing and train-reservation system for the Nigerian Railway Corporation (NRC). Public NRC information shows multiple passenger services and approved booking portals. The proposed system supports passengers, ticket agents, station staff, conductors and administrators. It stores user accounts, stations, routes, ordered route stations, trains, coaches, seats, dated journeys, journey stops, bookings, booking passengers, tickets, payments and fares. All passenger details, identifiers, journey dates, fares and payment records used in the implementation are synthetic.
 
