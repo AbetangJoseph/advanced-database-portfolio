@@ -7,9 +7,6 @@ This individual portfolio models a passenger e-ticketing and train-reservation s
 
 The main operations are journey search, origin and destination selection, coach and seat selection, passenger registration, payment, QR-ticket issuance, booking-history lookup, ticket validation and operational reporting. Freight logistics, train maintenance, signalling, crew rostering and payroll are outside the passenger-reservation boundary.
 
-### distributed cloud architecture
-![distributed cloud architecture diagram](portfolio-5-distributed-cloud/screenshots/Abetang_Abetang_301917898_DistributedCloudArchitecture.png)
-
 
 ## Portfolio activities and results
 
@@ -22,6 +19,7 @@ Primary keys identify every row, while unique constraints protect business ident
 A train seat differs from a flight seat because it can be sold again after a passenger alights. Each ticket therefore stores boarding and alighting sequences and a generated integer range representing the occupied journey segment. A GiST exclusion constraint rejects overlapping `HELD`, `ISSUED` or `USED` tickets for the same journey and seat. It still permits adjacent reservations such as Lagos-Abeokuta `[1,2)` followed by Abeokuta-Ibadan `[2,3)`.
 
 **Evidence:** [design, schema and ER diagram](./portfolio-1-database-design/screenshots/Abetang_Abetang_301917898_ER_Diagram.png)
+![ER diagram](portfolio-1-database-design/screenshots/Abetang_Abetang_301917898_ER_Diagram.png)
 
 ### Portfolio 2 - Query processing and optimisation
 
@@ -68,7 +66,8 @@ The design prioritizes consistency for seat allocation. During a network partiti
 
 Sharding is not initially required. Appropriate indexes, connection pooling, archival or partitioning by journey date, and read replicas should be used first. If later scale requires distribution, all tickets and seat-conflict checks for one journey must remain together. The portfolio provides an architecture and verification query but does not claim that a managed PostgreSQL cloud deployment was executed.
 
-**Evidence:** [5 distributed and cloud design](./portfolio-5-distributed-cloud/Abetang_Abetang_301917898_README.md) 
+**Evidence:** [5 distributed and cloud design](./portfolio-5-distributed-cloud/Abetang_Abetang_301917898_README.md)
+![distributed cloud architecture diagram](portfolio-5-distributed-cloud/screenshots/Abetang_Abetang_301917898_DistributedCloudArchitecture.png) 
 
 ## 3. Individual technical reflection
 
