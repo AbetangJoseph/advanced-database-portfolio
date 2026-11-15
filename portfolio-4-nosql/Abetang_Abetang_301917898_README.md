@@ -38,10 +38,10 @@ Connected to the Atlas deployment using MongoDB Compass
 
 | Evidence | Screenshot | What it demonstrates |
 |---|---|---|
-| Collection indexes | [View indexes](./Abetang_Abetang_301917898_Indexes.png) | Shows the automatic `_id_` index and the four indexes created for ticket lookup, booking history and journey queries. |
-| QR-token lookup | [View QR lookup](./Abetang_Abetang_301917898_QRTokenLookup.png) | Shows that a ticket can be retrieved directly using its unique QR token. |
-| Schema validation | [View schema validator](./Abetang_Abetang_301917898_SchemaValidation.png) | Shows the JSON Schema rules used to enforce the required ticket-document structure. |
-| Ticket documents, part 1 | [View ticket documents 1](./Abetang_Abetang_301917898_TicketDocuments01.png) | Shows the embedded passenger, journey and seat information. |
-| Ticket documents, part 2 | [View ticket documents 2](./Abetang_Abetang_301917898_TicketDocuments02.png) | Shows the remaining embedded fare, validation and synchronization information. |
+| Collection indexes | [View indexes](./screenshots/Abetang_Abetang_301917898_Indexes.png) | Shows the automatic `_id_` index and the four indexes created for ticket lookup, booking history and journey queries. |
+| QR-token lookup | [View QR lookup](./screenshots/Abetang_Abetang_301917898_QRTokenLookup.png) | Shows that a ticket can be retrieved directly using its unique QR token. |
+| Schema validation | [View schema validator](./screenshots/Abetang_Abetang_301917898_SchemaValidation.png) | Shows the JSON Schema rules used to enforce the required ticket-document structure. |
+| Ticket documents, part 1 | [View ticket documents 1](./screenshots/Abetang_Abetang_301917898_TicketDocuments01.png) | Shows the embedded passenger, journey and seat information. |
+| Ticket documents, part 2 | [View ticket documents 2](./screenshots/Abetang_Abetang_301917898_TicketDocuments02.png) | Shows the remaining embedded fare, validation and synchronization information. |
 
 

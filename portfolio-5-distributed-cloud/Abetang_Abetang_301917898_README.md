@@ -1,8 +1,6 @@
 # Portfolio 5 - Distributed and Cloud Database Exercise
 
-## Proposed deployment
-
-![alt text](./Abetang_Abetang_301917898_DeploymentArchitecture.png)
+![alt text](./screenshots/Abetang_Abetang_301917898_DistributedCloudArchitecture.png)
 
 ## Availability and replication
 
@@ -36,7 +34,6 @@ Sharding is not initially required. First use correct indexes, connection poolin
 - Masked or synthetic development data
 - Backup, replica-lag, storage and failed-payment monitoring
 
-`cloud_verification.sql` reports whether the connected PostgreSQL node is a writer/replica and shows replication information available to the current role.
 
 Reference: [AWS - RDS for PostgreSQL Read Replicas](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PostgreSQL.Replication.ReadReplicas.html).
 
