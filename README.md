@@ -46,7 +46,7 @@ The transaction exercise demonstrates atomicity, consistency, isolation and dura
 
 For the two-session concurrency test, Session A inserted an active ticket for journey 1, seat 3 and occupied range `[1,3)`. Session B attempted to issue the same seat for overlapping range `[1,2)`. PostgreSQL rejected Session B with SQL state `23P01` and the exclusion constraint `ex_no_overlapping_seat_ticket`. This proved that the database prevents a double sale even if separate application sessions attempt conflicting bookings at nearly the same time.
 
-**Evidence:** [transaction](./portfolio-3-transactions-concurrency/Abetang_Abetang_301917898_BookingCommit.sql) and [concurrency scripts](./portfolio-3-transactions-concurrency/Abetang_Abetang_301917898_ConcurrencySessionA_03.png)
+**Evidence:** [transaction](./portfolio-3-transactions-concurrency/Abetang_Abetang_301917898_BookingCommit.sql) and [concurrency scripts](./portfolio-3-transactions-concurrency/screenshots/Abetang_Abetang_301917898_ConcurrencySessionA_03.png)
 
 ### Portfolio 4 - NoSQL and advanced data models
 
