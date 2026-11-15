@@ -6,7 +6,9 @@ This portfolio uses the Nigerian Railway Corporation passenger train reservation
 
 ## Relational database model
 
-This section models the core entities and relationships of the Nigerian Railway reservation system. The ER diagram provides a visual overview of the database design: [ER Diagram](Abetang_Abetang_301917898_ER_Diagram.png)
+This section models the core entities and relationships of the Nigerian Railway reservation system. The ER diagram provides a visual overview of the database design: [ER Diagram](screenshots/Abetang_Abetang_301917898_ER_Diagram.png)
+
+![ERD](screenshots/Abetang_Abetang_301917898_ER_Diagram.png)
 
 | Table                | Purpose                                                                 |
 | -------------------- | ----------------------------------------------------------------------- |

@@ -1,18 +1,14 @@
-# advanced-database-systems-portfolio
+# Train E-Ticketing System
 A case study of the Nigerian Railway Corporation (NRC) e-ticketing database using PostgreSQL, MongoDB and advanced database concepts
-```
-Organization: Nigerian Railway Corporation
 
-System: Passenger Train E-Ticketing and Seat Reservation Platform
-```
 ## 1. Case study and system scope
 
-This individual portfolio models a passenger e-ticketing and train-reservation system for the Nigerian Railway Corporation (NRC). Public NRC information shows multiple passenger services and approved booking portals. The proposed system supports passengers, ticket agents, station staff, conductors and administrators. It stores user accounts, stations, routes, ordered route stations, trains, coaches, seats, dated journeys, journey stops, bookings, booking passengers, tickets, payments and fares. All passenger details, identifiers, journey dates, fares and payment records used in the implementation are synthetic.
+This individual portfolio models a passenger e-ticketing and train-reservation system for the Nigerian Railway Corporation (NRC). Public NRC information shows multiple passenger services and approved booking portals. The system that I have designed supports passengers, ticket agents, station staff, conductors and administrators. It stores user accounts, stations, routes, ordered route stations, trains, coaches, seats, dated journeys, journey stops, bookings, booking passengers, tickets, payments and fares. All passenger details, identifiers, journey dates, fares and payment records used in the implementation are synthetic.
 
 The main operations are journey search, origin and destination selection, coach and seat selection, passenger registration, payment, QR-ticket issuance, booking-history lookup, ticket validation and operational reporting. Freight logistics, train maintenance, signalling, crew rostering and payroll are outside the passenger-reservation boundary.
 
 ### distributed cloud architecture
-![alt text](portfolio-5-distributed-cloud/Abetang_Abetang_301917898_DeploymentArchitecture.png)
+![distributed cloud architecture diagram](portfolio-5-distributed-cloud/screenshots/Abetang_Abetang_301917898_DistributedCloudArchitecture.png)
 
 
 ## Portfolio activities and results
@@ -25,7 +21,7 @@ Primary keys identify every row, while unique constraints protect business ident
 
 A train seat differs from a flight seat because it can be sold again after a passenger alights. Each ticket therefore stores boarding and alighting sequences and a generated integer range representing the occupied journey segment. A GiST exclusion constraint rejects overlapping `HELD`, `ISSUED` or `USED` tickets for the same journey and seat. It still permits adjacent reservations such as Lagos-Abeokuta `[1,2)` followed by Abeokuta-Ibadan `[2,3)`.
 
-**Evidence:** [design, schema and ER diagram](./portfolio-1-database-design/Abetang_Abetang_301917898_ER_Diagram.png)
+**Evidence:** [design, schema and ER diagram](./portfolio-1-database-design/screenshots/Abetang_Abetang_301917898_ER_Diagram.png)
 
 ### Portfolio 2 - Query processing and optimisation
 
@@ -90,4 +86,4 @@ During implementation, I encountered `psql` commands such as `\gset` failing in 
 
 ## 5. AI-use declaration
 
-I used OpenAI Codex to help interpret the assignment requirements, research public documentation, explain database concepts, troubleshoot execution errors and organize the repository. And I used Anthropic Claud to fine-tune the architecture that I drew on Excalidraw. I personally created and queried the PostgreSQL and MongoDB Atlas databases, ran the schema, seed, query, indexing, transaction, rollback and concurrency exercises, captured the submitted evidence, reviewed the measured execution plans and corrected the implementation for the tools I used. I understand the submitted design and remain responsible for its correctness, originality and explanation.
+I used OpenAI Codex to help me research public documentation, explain database concepts, troubleshoot execution errors. And I used Anthropic Claud to fine-tune my erdiagram and cloud architecture. I personally created and queried the PostgreSQL and MongoDB Atlas databases, ran the schema, seed, query, indexing, transaction, rollback and concurrency exercises, captured the submitted evidence, reviewed the measured execution plans and corrected the implementation for the tools I used. I understand the submitted design and remain responsible for its correctness, originality and explanation.
